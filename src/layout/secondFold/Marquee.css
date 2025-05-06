@@ -1,0 +1,94 @@
+.scrolling-text {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 16px 0px;
+  height: 100px;
+  pointer-events: none;
+}
+
+.scrolling-text > .rail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scrolling-text > .rail > h4 {
+  white-space: nowrap;
+}
+.scrolling-text > .rail > h4 > img {
+  filter: invert(100%) brightness(50%);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  .scrolling-text {
+    width: 150vw;
+  }
+  .scroll_img {
+    margin: 0 50px;
+  }
+  .scroll_h4 {
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 648px) {
+  .scrolling-text {
+    width: 270vw;
+  }
+  .scroll_img {
+    margin: 0 50px;
+  }
+  .scroll_h4 {
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 649px) and (max-width: 768px) {
+  .scrolling-text {
+    width: 220vw;
+  }
+  .scroll_img {
+    margin: 0 50px;
+  }
+  .scroll_h4 {
+    margin: 0 50px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .scrolling-text {
+    width: 180vw;
+  }
+  .scroll_img {
+    margin: 0 50px;
+  }
+  .scroll_h4 {
+    margin: 0 50px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .scrolling-text {
+    width: 150vw;
+  }
+  .scroll_img {
+    margin: 0 50px;
+  }
+  .scroll_h4 {
+    margin: 0 50px;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  .scrolling-text {
+    width: 120vw;
+  }
+  .scroll_img {
+    margin: 0 50px;
+  }
+  .scroll_h4 {
+    margin: 0 50px;
+  }
+}
