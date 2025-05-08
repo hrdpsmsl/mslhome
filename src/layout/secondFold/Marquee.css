@@ -7,22 +7,19 @@
   padding: 16px 16px;
   height: 150px;
   pointer-events: none;
-  mix-blend-mode: difference;
 }
 
 .scrolling-text > .rail {
   display: flex;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: difference;
 }
 .scrolling-text > .rail > h4 {
   white-space: nowrap;
-  mix-blend-mode: difference;
 }
 .scrolling-text > .rail > h4 > img {
   filter: invert(100%) brightness(100%);
-  mix-blend-mode: difference;
+  width: 85px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
@@ -31,7 +28,6 @@
   }
   .scroll_img {
     margin: 0 70px;
-    mix-blend-mode: difference;
   }
   .scroll_h4 {
     margin: 0 0px;
@@ -40,7 +36,7 @@
 
 @media only screen and (min-width: 481px) and (max-width: 648px) {
   .scrolling-text {
-    width: 270vw;
+    width: 90vw;
   }
   .scroll_img {
     margin: 0 50px;
@@ -52,7 +48,7 @@
 
 @media only screen and (min-width: 649px) and (max-width: 768px) {
   .scrolling-text {
-    width: 220vw;
+    width: 90vw;
   }
   .scroll_img {
     margin: 0 50px;
@@ -64,7 +60,7 @@
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .scrolling-text {
-    width: 180vw;
+    width: 90vw;
   }
   .scroll_img {
     margin: 0 50px;
@@ -76,7 +72,7 @@
 
 @media only screen and (min-width: 993px) and (max-width: 1280px) {
   .scrolling-text {
-    width: 150vw;
+    width: 90vw;
   }
   .scroll_img {
     margin: 0 50px;
@@ -88,7 +84,7 @@
 
 @media only screen and (min-width: 1281px) {
   .scrolling-text {
-    width: 120vw;
+    width: 90vw;
   }
   .scroll_img {
     margin: 0 50px;
