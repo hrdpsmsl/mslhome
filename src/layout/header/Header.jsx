@@ -127,6 +127,12 @@ const Header = () => {
               WORK
             </Text>
             <Text
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: 'smooth', duration: 1 });
+                setTimeout(() => {
+                  navigate('/nhome');
+                }, 500); // wait for smooth scroll (adjust timing if needed)
+              }}
               fontSize={['18px']}
               display={'flex'}
               justifyContent={'center'}
