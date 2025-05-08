@@ -7,6 +7,29 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Draggable } from 'gsap/Draggable';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 
+const imageLinks = [
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333173/salesforce-1/salesforce-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333176/gradsingapore-1/gradsingapore-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333183/panasonic-logo-black-and-white-1-1/panasonic-logo-black-and-white-1-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333187/paytm-1/paytm-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333191/Mahindra-Lifespaces-1/Mahindra-Lifespaces-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333315/California-Almonds-1/California-Almonds-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333325/RitesLogo-1/RitesLogo-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333320/mastercard-logo-4-1/mastercard-logo-4-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333335/dell-1_24145dc2f/dell-1_24145dc2f.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333169/apollo-1/apollo-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333173/salesforce-1/salesforce-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333176/gradsingapore-1/gradsingapore-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333183/panasonic-logo-black-and-white-1-1/panasonic-logo-black-and-white-1-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333187/paytm-1/paytm-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333191/Mahindra-Lifespaces-1/Mahindra-Lifespaces-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333315/California-Almonds-1/California-Almonds-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333325/RitesLogo-1/RitesLogo-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333320/mastercard-logo-4-1/mastercard-logo-4-1.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333335/dell-1_24145dc2f/dell-1_24145dc2f.png',
+  'https://res.cloudinary.com/dsphyolrg/images/v1734333169/apollo-1/apollo-1.png',
+];
+
 const MarqueeComponent = () => {
   gsap.registerPlugin(ScrollTrigger, Draggable, MotionPathPlugin, useGSAP);
   const animation = () => {
@@ -202,18 +225,26 @@ Features:
     });
     setClientLogos(cimagesarray);
   };
+  const getLocalClient = () => {
+    let cimagesarray = [];
+    for (let i = 0; i < 40; i++) {
+      cimagesarray.push('./assets/logo.png');
+    }
+    cimagesarray.push('./assets/logo_blank.png');
+    setClientLogos(cimagesarray);
+  };
 
   useEffect(() => {
-    getClientele();
+    // getClientele();
+    getLocalClient();
     setTimeout(() => {
       animation();
     }, 4000);
   }, []);
   return (
     <div className='scrolling-text'>
-      {console.log(clientLogos)}
       <div className='rail'>
-        {clientLogos.map((item, key) => {
+        {imageLinks.map((item, key) => {
           return (
             <h4 key={key} className='scroll_h4'>
               <img src={item} data-src={item} className='scroll_img' />
