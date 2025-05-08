@@ -4,32 +4,37 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  padding: 16px 0px;
-  height: 100px;
+  padding: 16px 16px;
+  height: 150px;
   pointer-events: none;
+  mix-blend-mode: difference;
 }
 
 .scrolling-text > .rail {
   display: flex;
   align-items: center;
   justify-content: center;
+  mix-blend-mode: difference;
 }
 .scrolling-text > .rail > h4 {
   white-space: nowrap;
+  mix-blend-mode: difference;
 }
 .scrolling-text > .rail > h4 > img {
-  filter: invert(100%) brightness(50%);
+  filter: invert(100%) brightness(100%);
+  mix-blend-mode: difference;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   .scrolling-text {
-    width: 150vw;
+    width: 90vw;
   }
   .scroll_img {
-    margin: 0 50px;
+    margin: 0 70px;
+    mix-blend-mode: difference;
   }
   .scroll_h4 {
-    margin: 0 20px;
+    margin: 0 0px;
   }
 }
 
